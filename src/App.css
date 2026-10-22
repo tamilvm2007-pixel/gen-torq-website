@@ -1630,3 +1630,75 @@ body {
     letter-spacing: 1px;
   }
 }
+
+/* Fix bike image overflow on mobile */
+@media (max-width: 768px) {
+  .machine img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .machine {
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .machine img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .machine {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .machine > div {
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+
+/* Mobile fix for bike section overflow */
+@media (max-width: 768px) {
+  .bike-details {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .bike-image {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .bike-image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-sizing: border-box;
+  }
+}
